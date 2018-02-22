@@ -1,0 +1,42 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+form {
+    &.location-finder {
+        margin-bottom: 10px;
+    }
+}
+
+dl {
+    &.locations-list {
+        height: 500px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        dd {
+            padding-bottom: 5px;
+
+            cursor: default;
+
+            a {
+                &:link,
+                &:hover,
+                &:active,
+                &:visited {
+                    cursor: pointer;
+                }
+            }
+
+            &.selected {
+                font-weight: bold;
+            }
+        }
+    }
+}
