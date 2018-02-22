@@ -11,4 +11,4 @@ RUN apt update \
     && chmod +x /root/init.sh \
     && echo "daemon off;" >> /etc/nginx/nginx.conf
 
-CMD ["/root/init.sh"]
+CMD chown -R www-data:www-data /var/app && /bin/bash /root/init.sh

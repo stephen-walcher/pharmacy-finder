@@ -31,8 +31,8 @@ Vue.component('location-map', require('./components/locationMap.component.vue'))
 const app = new Vue({
     el: '#app',
     data: {
-        latitude: 0,
-        longitude: 0,
+        latitude: 38.926737,
+        longitude: -94.716811,
         currentLocation: {},
         locations: []
     },
